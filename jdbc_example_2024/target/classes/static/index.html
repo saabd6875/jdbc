@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Our first web app</title>
+</head>
+<body>
+<h1>CRUD web app!</h1>
+<p id="stud"></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="code.js"></script>
+
+
+<div style="border: solid 1px; width:250px; text-align: center">
+    <h2> Send info to Java - simple form </h2>
+    <label>Student name</label><br>
+    <input type="text" id="name"><br>
+    <label>Student age</label><br>
+    <input type="text" id="age"><br>
+    <label>Student university</label><br>
+    <input type="text" id="university"><br>
+    <br>
+    <button onclick="sendStudentFromInput()">click</button>
+    <br>
+</div>
+
+<h2> Get list of students from java endpoint </h2>
+<button onclick="getListOfStudents()">Get students</button>
+<h3>List of students</h3>
+<p id="students"></p>
+<div style="border: solid 1px; width:250px; text-align: center">
+    <h2> Update selected student </h2>
+    <p>ID:</p><p id="idStud"></p>
+    <label>Student name</label><br>
+    <input type="text" id="nameEdit"><br>
+    <label>Student age</label><br>
+    <input type="text" id="ageEdit"><br>
+    <label>Student university</label><br>
+    <input type="text" id="universityEdit"><br>
+    <br>
+    <button onclick="updateStudentInDb()">click</button>
+    <br>
+</div>
+<br>
+</body>
+</html>
